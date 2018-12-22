@@ -13,5 +13,5 @@ WORKDIR /data
 USER nobody
 EXPOSE 1883
 
-ENTRYPOINT ["mosquitto"]
+ENTRYPOINT ["mosquitto","-c","/etc/mosquitto/mosquitto.conf"]
 
