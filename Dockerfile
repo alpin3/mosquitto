@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.8
 MAINTAINER kost - https://github.com/kost
 
 RUN apk --update add mosquitto mosquitto-clients && rm -f /var/cache/apk/* && \
